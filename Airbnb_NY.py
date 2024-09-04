@@ -16,9 +16,9 @@ mpl.rcParams['font.family']= "STKaiti"  # 设置字体为楷体
 mpl.rcParams['axes.unicode_minus']=False  # 确保负号显示正常
 
 # 读取数据
-listings = pd.read_csv("D://pycharm//listings.csv//listings.csv")
-reviews = pd.read_csv("D://pycharm//reviews.csv//reviews.csv")
-calendar = pd.read_csv("D://pycharm//calendar.csv//calendar.csv")
+listings = pd.read_csv("F://software_learn//python//pythonProject//listings.csv")
+reviews = pd.read_csv("F://software_learn//python//pythonProject//reviews.csv")
+calendar = pd.read_csv("F://software_learn//python//pythonProject//calendar.csv")
 
 # 将价格中的逗号和美元符号去除，并转换为浮点数
 price = [float(price[1:].replace(',', '')) for price in calendar.price]
